@@ -1,0 +1,29 @@
+"https://alpha.dev.magalu.com/" por "http://127.0.0.1:8080"
+
+http http://127.0.0.1:8080/account/v1/whoami X-API-KEY:
+
+http http://127.0.0.1:8080/account/v1/whoami X-API-KEY:5734143a-595d-405d-9c97-6c198537108f
+
+http://127.0.0.1:8080
+
+5734143a-595d-405d-9c97-6c198537108f
+
+http http://127.0.0.1:8080/account/v1/whoami X-API-KEY:5734143a-595d-405d-9c97-6c198537108f
+
+
+Próximo passo é explorar a consulta de pedidos e seus itens:
+http http://127.0.0.1:8080/maestro/v1/orders X-API-KEY:5734143a-595d-405d-9c97-6c198537108f X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
+
+Podemos verificar também um pedido em específico:
+http http://127.0.0.1:8080/maestro/v1/orders/13bdb3e3-8fad-4f9b-a6c3-2fa99786289f X-API-KEY:5734143a-595d-405d-9c97-6c198537108f X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
+
+Assim como podemos consultar uma lista de produtos a partir de um pedido e seu respectivo pacote:
+http http://127.0.0.1:8080/maestro/v1/orders/efb77dcf-d83c-4935-81ac-7be5f37e6cdc/packages/e3ae3598-8034-4374-8eed-bdca8c31d5a0 X-API-KEY:5734143a-595d-405d-9c97-6c198537108f X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
+
+
+ou ainda mais específico:
+
+http http://127.0.0.1:8080/maestro/v1/orders/efb77dcf-d83c-4935-81ac-7be5f37e6cdc/packages/e3ae3598-8034-4374-8eed-bdca8c31d5a0/items X-API-KEY:21fea73c-e244-497a-8540-be0d3c583596 X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
+
+
+
