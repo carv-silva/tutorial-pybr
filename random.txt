@@ -1,1 +1,7 @@
 poetry shell --> ativa o ambiente virtual do poetry
+
+A nossa aplicação pode estar ainda rodando, mas caso não esteja vamos inicia-la.
+
+O comando para isto é uvicorn --reload api_pedidos.api:app.
+
+
